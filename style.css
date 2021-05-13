@@ -1,0 +1,12 @@
+/* sets navbar background to black */
+.navbar {
+  background: #e6e6e6;
+  }
+
+/* Scrollbox */
+h5, p {
+  color: #14213d;
+  width: 25%;
+  height: 60px;
+  overflow: auto;
+}
