@@ -5,49 +5,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS  (including Bootstrap)-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  <body>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/faeaecb381.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
+    <div id="container">
+      <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <span class="navbar-brand">
-        <img src="images/conversation.svg" width="30" height="30" alt="">
-      </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">About Me</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">About Me</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
 
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
 
-      </div>
-    </nav>
+          </div>
+        </nav>
+      </header>
 
-    <h1>Hello, world!</h1>
+      <main>
+        <div class="container-fluid padding">
+          <div class="row text-center p-3 d-flex flex-column align-items-center">
+            <div class="col-5 jumbotron">
+              <h2>Let's socialize, friend</h2>
+              <hr>
+              <p>Links to the outside world</p>
+            </div>
+            <div class="col-12 p-1 social">
+              <a href="https://github.com/daniel-sarran"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/daniel-sarran/"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="row text-center p-3 d-flex flex-column align-items-center">
+            <div class="col-5 pt-3 jumbotron">
+              <h2>Here's a form, here's a form</h2>
+              <hr>
+              <p>POST request to "http://httpbin.org/post" -- the response is printed in console</p>
+            </div>
+            <div class="col-5">
+              <form class="d-flex flex-column align-items-center">
+                <fieldset>
+                  <legend>Text to submit:</legend>
+                  <input type="text" id="postSubmitInput">
+                </fieldset>
+                <br>
+                <input type="submit" class="btn btn-primary btn-lg" id="postSubmit" /> 
+              </form>
+            </div>
+          </div>
+        </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div id="grid-footer">
+          <div class="content-footer">
+            <h3><span class="badge badge-success">Quick Grading</span></h3>
+            <hr>
+            <div class="table-footer">
+              <div>
+                <h5>Rubric requirements on this page:</h5>
+                <ul>
+                  <li>Link that you can click and leads to outside webpages</li>
+                  <li>One page has a form</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Where to find it:</h5>
+                <ul>
+                  <li>Social media icons link to external pages on GitHub and LinkedIn</li>
+                  <li>Right above footer: httpbinrequest via post</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <!-- Optional JavaScript -->
-    <script src="script.js"></script>
+    <script src="contact.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

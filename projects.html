@@ -5,49 +5,214 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS  (including Bootstrap)-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  <body>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/faeaecb381.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <span class="navbar-brand">
-        <img src="images/conversation.svg" width="30" height="30" alt="">
-      </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+    <div id="container">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+  
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">About Me</a>
+              </li>
+  
+              <li class="nav-item active">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+  
+          </div>
+        </nav>
+      </header>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">About Me</a>
-          </li>
+      <main>
+        <div class="container-fluid">
+          <div class="row">
 
-          <li class="nav-item active">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
+            <div class="col-12 pt-5 jumbotron">
 
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
+              <div class="row text-center d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="images/HUNT.png" alt="Card image cap">
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">Hunt</h4>
+                    <p class="card-text lead">Organize your job search with a 
+                      "CRM-like" management system: log, track, advance, and 
+                      reject job applications.</p>
+                    <a href="#" class="btn btn-primary mt-auto" id="btn1">VIEW</a>
+                  </div>
+                </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="images/parity-portfolio.png" alt="Card image cap">
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">Parity Portfolio</h4>
+                    <p class="card-text lead">Rebalance your investments the easy 
+                      way: visualize and calculate portfolio trades to reach an
+                       asset allocation target.</p>
+                    <a href="#" class="btn btn-primary mt-auto" id="btn2">VIEW</a>
+                  </div>
+                </div>
 
-      </div>
-    </nav>
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="images/janggi.png" alt="Card image cap">
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">Janggi</h4>
+                    <p class="card-text lead">Play ”Janggi” in console -- often 
+                      referred to as ”Korean Chess” -- use your army to pin 
+                      your opponent until checkmate!</p>
+                    <a href="#" class="btn btn-primary mt-auto" id="btn3">VIEW</a>
+                  </div>
+                </div>
 
-    <h1>Hello, world!</h1>
+              </div>
+            </div>
+          </div>
+        
 
-    <!-- Optional JavaScript -->
-    <script src="script.js"></script>
+          <div class="fixed-background text-center">
+            <h1>Projects</h1>
+            <div class="fixed-wrap">
+              <div class="fixed"></div>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-md-12 justify-content-center">
+
+              <div class="row py-5" id="project1">
+                <div class="col-2"></div>
+                <div class="col-5">
+                  <img class="img-fluid" src="images/HUNT.png" alt="">
+                </div>
+
+                <div class="col-4">
+                  <h3>HUNT</h3>
+                  <span class="badge badge-warning">Python, Qt (PySide6, QML, JavaScript), SQL</span>
+                  <hr class="big-padding">
+                  <p>In my previous career I had always worked with CRMs and felt
+                    they made life so much more efficient. Clients would call 
+                    and suddenly I would need to remember details from 3 months
+                    ago in specific detail. <br>Job applications aren't <em>all</em>
+                    that different, but there really aren't great "job" CRMs
+                    out there. So I decided to make one.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row py-5 my-3" id="project2">
+                <div class="col-2"></div>
+
+                <div class="col-4 align-text-center">
+                  <h3>Parity Portfolio</h3>
+                  <span class="badge badge-warning">Python (Flask), Javascript, HTML5, CSS3, Bootstrap</span>
+                  <span class="badge badge-primary">Hackathon</span>
+
+                  <hr class="big-padding">
+                  <p>This is my first Hackathon project. Making a website with 
+                    zero web experience is probably not recommended, therefore
+                    it is exactly what I did.</p>
+                    <p>I didn't hardly do any backend
+                    work and instead was responsible for the styling of the 
+                    site. I didn't really understand styling well so it's all
+                    bootstrap and inline styles which is gross. But in the end
+                    not bad for a newbie.
+                  </p>
+                </div>
+
+                <div class="col-5 embed-responsive">
+                  <iframe src="https://www.youtube.com/embed/XSBdlFVdDJA" 
+                   title="YouTube video player" frameborder="0" 
+                   allow="accelerometer; autoplay; clipboard-write; 
+                   encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <div class="row py-5 mt-3" id="project3">
+
+                <div class="col-2"></div>
+
+                <div class="col-5">
+                  <img class="img-fluid" src="images/janggi.png" alt="">
+                </div>
+
+                <div class="col-4 align-text-center">
+                  <h3>Janggi</h3>
+                  <span class="badge badge-warning">Python</span>
+                  <hr class="big-padding">
+                  <p>Janggi is the somewhat equivalent version of Korean Chess.
+                     I don't even know why it's on my resume to be honest. The
+                      checkmake doesn't work and I spent 8 hours from 1am - 9am
+                      debugging one problem. <br>I really detested making this 
+                      piece of software and it will be the first I boot off the
+                       list. <br>
+                     Good riddance!
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div id="grid-footer">
+          <div class="content-footer">
+            <h3><span class="badge badge-success">Quick Grading</span></h3>
+            <hr>
+            <div class="table-footer">
+              <div>
+                <h5>Rubric requirements on this page:</h5>
+                <ul>
+                  <li>Contains pictures or videos</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Where to find it:</h5>
+                <ul>
+                  <li>"Parity Portfolio" project has a video, pictures all over pages</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="projects.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

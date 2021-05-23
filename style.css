@@ -1,12 +1,213 @@
 /* sets navbar background to black */
-.navbar {
-  background: #e6e6e6;
-  }
 
-/* Scrollbox */
-h5, p {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+#container {
+  min-height: 100%;
+  position: relative;
+}
+.navbar {
+  background: #118ab2;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+main {
+  padding-bottom: 300px; /* height of footer */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 30%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-decoration: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #118ab2;
+  border: 1px solid #118ab2;
+}
+.btn-primary:hover {
+  background-color: #ef476f;
+  border: 1px solid #ef476f;
+}
+.fixed {
+  background-image: url("images/blueprint.jpeg");
+  position: fixed;
+  overflow: hidden;
+  opacity: 0.65;
+}
+.fixed-background {
+  padding: 8rem 0;
+}
+.fixed-background h1 {
+  font-size: 500%;
+  text-decoration: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  color: white;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.big-padding {
+  padding: 0rem 5rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.fa-font {
+  color: #ef476f;
+}
+.fa-meh {
+  color: #ffd166;
+}
+.fa-head-side-cough {
+  color: #06d6a0;
+}
+.fa-font,
+.fa-meh,
+.fa-head-side-cough {
+  font-size: 4em;
+  margin: 1rem;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-github {
+  color: #333;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-envelope {
+  color: #ffd166;
+}
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-envelope:hover {
+  color: #ef476f;
+}
+.card {
+  margin: 1.5rem;
+}
+/* Fixed Background Image (projects page) */
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.scrollbox {
   color: #14213d;
-  width: 25%;
-  height: 60px;
+  width: 100%;
+  height: 200px;
   overflow: auto;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+button {
+  padding: 20px 15px;
+  border: 0px;
+  border-radius: 3px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#grid-footer {
+  width: 100;
+  background: #073b4c;
+  color: #e6e6e6;
+}
+.content-footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  height: 300px;
+}
+.table-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 20px;
+}
+footer hr {
+  border-top: 1px solid #219ebc;
 }
