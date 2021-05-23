@@ -211,3 +211,11 @@ button {
 footer hr {
   border-top: 1px solid #219ebc;
 }
+figcaption {
+  color: #666;
+  font-weight: 100;
+  margin: 0 !important;
+}
+figure {
+  margin: 0;
+}
