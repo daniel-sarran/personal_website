@@ -13,7 +13,7 @@ function bindButtons() {
         console.log(response.json.text);
       });
 
-      req.open("POST", "http://httpbin.org/post", true);
+      req.open("POST", "https://httpbin.org/post", true);
       req.setRequestHeader("Content-Type", "application/json");
       req.send(JSON.stringify(payload));
       event.preventDefault();
